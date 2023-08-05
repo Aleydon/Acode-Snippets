@@ -1,0 +1,58 @@
+snippet html 
+	<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<title>$1</title>
+		</head>
+		<body>
+			<div>
+				$2
+			</div>
+		</body>
+		</html>
+
+snippet script 
+	<script src="$1"></script>
+
+snippet div
+	<div class="$1"></div>
+
+//Headings
+snippet h1
+	<h1>$1</h1>
+snippet h2
+	<h2>$1</h2>
+snippet h3
+	<h3>$1</h3>
+snippet h4
+	<h4>$1</h4>
+snippet h5
+	<h5>$1</h5>
+snippet h6
+	<h6>$1</h6>
+	
+snippet btn 
+	<button>$1</button>	
+	
+snippet list
+	<ul $1>
+		<li>$2</li>
+	</ul>
+
+//Inputs
+snippet inpText 
+	<input type="text" required placeholder="$1"/>
+
+snippet inpMail
+	<input type="email" required placeholder="$1" />
+
+snippet inpNumber
+	<input type="number" required placeholder="$1 />
+
+snippet form
+	<form method="POST">
+		<input type="text" />
+		<button type="submit">$1</button>
+	</form>

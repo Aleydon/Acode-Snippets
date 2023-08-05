@@ -1,0 +1,100 @@
+# React
+
+snippet inter 
+	interface $1 {
+		$2: $3;
+	}
+
+snippet react
+	import React from 'react';
+
+snippet state
+	const [ $1, $2 ] = useState<$3>();
+
+snippet effect 
+	useEffect(() => {
+		$1
+	}, []);
+
+snippet aEffect 
+	useEffect(async () => {
+		const $1 = await $2
+	}, []);
+
+snippet rfc
+	export const $1 = () => {
+		return (
+			<>
+				<h1>$1</h1>
+				<h2>It's Working! 😃</h2>
+			</>
+		);
+	} 
+
+snippet context
+	import { createContext } from 'react';
+	
+	export const $1 = createContext({});
+	
+	export const $2 (children) => {
+		return (
+			<$1.provider value{{}}>{children}</$1.provider>
+		);
+	}
+
+snippet func
+	function $1() {
+		$2
+	}
+
+snippet arrow 
+	const $1 = () => {
+		$2
+	}
+
+snippet log 
+	console.log($1);
+	
+snippet warn
+	console.warn($1);
+
+snippet error
+	console.log($1)
+
+
+//JSX
+snippet btn 
+	<button onClick={$1} onChange={$2}>$3</button>
+
+snippet div
+	<div>$1</div>
+	
+snippet map 
+	<ul>
+		{$1.map($2 => <li key={$2}>{$3}</li>)
+		}
+	</ul>
+
+//Headings
+snippet h1
+	<h1>$1</h1>
+snippet h2
+	<h2>$1</h2>
+snippet h3
+	<h3>$1</h3>
+snippet h4
+	<h4>$1</h4>
+snippet h5
+	<h5>$1</h5>
+snippet h6
+	<h6>$1</h6>
+	
+//Inputs
+snippet input:text
+	<input type="text" required placeholder="$1"/>
+
+snippet input:mail
+	<input type="email" required placeholder="$1" />
+
+snippet input:number
+	<input type="number" required placeholder="$1 />

@@ -1,0 +1,39 @@
+snippet styled 
+	import styled from 'styled-components';
+	
+	export const Container = styled.div`
+		display: flex;
+		$1
+	`;
+	
+snippet log
+	console.log($1);
+
+snippet table
+	console.table($1);
+
+snippet class 
+	export class $1 {
+		constructor($2){}
+	}
+
+snippet inter
+	interface $1 {
+		$2: $3;
+	}
+
+snippet func
+	function $1(){
+		$2
+	}
+
+snippet arrow 
+	const $1 = () => {
+		
+	}
+
+snippet observable
+	$1(): Observable<$2> {
+		$3
+	}
+
