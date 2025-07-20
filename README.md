@@ -37,7 +37,6 @@ Follow these steps to set up the snippets in your Acode editor:
     git clone https://github.com/Aleydon/Acode-Snippets.git
     ```
 
-    _(Replace `your-username` and `your-repo-name` with your actual GitHub details, or simply download the ZIP and extract it on your device.)_
 
 2.  **Open Acode and navigate to the Snippets plugin settings:**
 
